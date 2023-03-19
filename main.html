@@ -7,48 +7,55 @@
 </head>
 
 <body>
-	<form method="post">
-		<div>
-			<label for="name">Name*</label>
-			<input id="#name" type="text" name="name" required>
-		</div>
-		<div>
-			<label for="email">Email*</label>
-			<input id="#email" type="email" name="email" required>
-		</div>
-		<div>
-			<label>Gender*</label>
-			<label for="male">Male</label>
-			<input id="#male" type="radio" name="gender" value="m" required>
-			<label for="female">Female</label>
-			<input id="#female" type="radio" name="gender" value="f">
-			
-		</div>
-		<div>
-			<label for="cars">Car Brands</label>
-			<select id="#cars" name="cars">
-				<option>Please Select</option>
-				<option value="bmw">BMW</option>
-				<option value="audi">Audi</option>
-				<option value="mercedez">Mercedez</option>
-			</select>
-		</div>
-		<div>
-			<label for="carage">Car Age*</label>
-			<input id="#carage" type="number" name="carage" required>
-		</div>
-		<div>
-			<label for="dop">Date of Purchase(dop)*</label>
-			<input id="#dop" type="date" name="dop" required>
-		</div>
-		<div>
-			<label for="password">Password*</label>
-			<input id="#password" type="password" name="password" required >
-		</div>
-		<div>
-			<button type="submit">submit </button>
-		</div>
-	</form>
+	<form action="" method="post">
+        <div>
+            <label for="name">Name*</label>
+            <input type="text" placeholder="Name" id="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email*</label>
+            <input type="email" placeholder="Email" id="email" required>
+        </div>
+
+        <div>
+            <label for="gender">Gender*</label>
+            <input type="radio" id="gender_m" name="gender" required>Male
+            <input type="radio" id="gender_f" name="gender" required>Female<br>
+        </div>
+        <label for="cars">Car Brands*</label>
+        <select id="cars" required>
+            <option value="placeholder">--Please choose an option--</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedez">Mercedez</option>
+        </select>
+        <div>
+            <label for="age">Age*</label>
+            <input type="number" id="age" placeholder="Age" required>
+        </div>
+        <div>
+            <label for="dob">DOB*</label>
+            <input type="date" id="dob" required>
+        </div>
+        <div>
+            <label for="tel">Phone Number</label>
+            <input type="tel" placeholder="xxx-xxx-xxxx." id="tel">
+        </div>
+        <div>
+            <label for="password">Password*</label>
+            <input type="password" placeholder="Password" id="password" required>
+        </div>
+        <div>
+            <label for="tos">I agree to the TOS</label>
+            <input type="checkbox" id="tos" required>*
+        </div>
+        <button type="submit">Submit Button</button>
+
+
+
+
+    </form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
